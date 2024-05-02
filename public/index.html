@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Binar Rental Car</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet" />
+  <link href="./css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+</head>
+
+<body>
+  <!--   Navigation Bar -->
+  <header class="px-6 bg-[#F1F3FF]">
+    <nav class="py-6 max-w-6xl mx-auto">
+      <div class="container mx-auto flex items-center justify-between">
+        <a class="text-darkblue-04 bg-darkblue-04 p-2" href="#">Binar Rental Car</a>
+        <div class="lg:flex gap-8 items-center hidden">
+          <a class="text-sm font-normal" href="#our-services-section">Our Services</a>
+          <a class="text-sm font-normal" href="#why-us-section">Why Us</a>
+          <a class="text-sm font-normal" href="#testimonial-section">Testimonial</a>
+          <a class="text-sm font-normal" href="#faq-section">FAQ</a>
+          <a class="btn-green" href="#">Register</a>
+        </div>
+        <button class="lg:hidden" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
+          <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6"><path fill-rule="evenodd" d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm1 5a1 1 0 100 2h14a1 1 0 100-2H3z" clip-rule="evenodd"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- drawer component -->
+  <!-- source https://flowbite.com/docs/components/drawer/ -->
+  <div id="drawer-right-example" class="w-full max-w-48 fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white " tabindex="-1" aria-labelledby="drawer-right-label">
+    <button type="button" data-drawer-hide="drawer-right-example" aria-controls="drawer-right-example" class="text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center" >
+      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+      </svg>
+    </button>
+    <div class="flex flex-col gap-3">
+      <p class="font-bold">BCR</p>
+      <a class="text-sm font-normal" href="#our-services-section">Our Services</a>
+      <a class="text-sm font-normal" href="#why-us-section">Why Us</a>
+      <a class="text-sm font-normal" href="#testimonial-section">Testimonial</a>
+      <a class="text-sm font-normal" href="#faq-section">FAQ</a>
+      <a class="w-full max-w-24 btn-green" href="#">Register</a>
+    </div>
+  </div>
+  <!--/   Navigation Bar -->
+
+  <!--   Hero Section -->
+  <section class="hero-section relative p-6 lg:py-100 bg-[#F1F3FF]" id="hero-section">
+    <div class="container max-w-6xl mx-auto">
+      <div class="lg:flex">
+        <div class="mb-[200px] lg:mb-0">
+          <p class="font-bold text-4xl mw-full max-w-[568px] mb-5">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</p>
+          <p class="text-sm font-light mw-full max-w-[463px] mb-5">Selamat datang di Binar Car Rental. Kamis menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+          <a href="/cars" class="btn-green">Mulai Sewa Mobil</a>
+        </div>
+        <img src="./images/img_car.png" alt="car" class="block absolute right-0 bottom-0 mobile:hidden" style="width: 90%;">
+        <img src="./images/img_car.png" alt="car" class="hidden mobile:block absolute right-0 bottom-0 sm:hidden" style="width: 70%;">
+        <img src="./images/img_car.png" alt="car" class="hidden sm:block absolute right-0 bottom-0 lg:hidden" style="width: 60%;">
+        <img src="./images/img_car.png" alt="car" class="hidden lg:block absolute right-0 bottom-0" style="width: 50%;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/   Hero Section -->
+  
+
+  <main>
+    <!--     Our Services Section -->
+    <section class="our-services-section p-6" id="our-services-section">
+      <div class="container max-w-6xl mx-auto mt-6">
+        <div class="md:flex">
+          <div class="mt-12 md:w-1/2 m-auto">
+            <div class="md:px-12">
+              <img src="./images/img_service.png" alt="" class="">
+            </div>
+          </div>
+          <div class="mt-6 md:w-1/2 m-auto">
+            <div class="md:py-12 md:px-6">
+              <h3 class="text-2xl font-bold items-center mb-5">Best Car Rental for any kind of trip in (Lokasimu)!</h3>
+              <p class="font-light text-sm py-2">Sewa mobil di Lokasimu bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+              <ol class="font-light text-sm pt-3">
+                <li class="inline-flex"><i class="bi bi-check mr-4 "></i>Sewa Mobil Dengan Suupir di Bali 12 Jam</li>
+                <li class="inline-flex"><i class="bi bi-check mr-4"></i>Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+                <li class="inline-flex"><i class="bi bi-check mr-4"></i>Sewa Mobil Jangka Panjang Bulanan</li>
+                <li class="inline-flex"><i class="bi bi-check mr-4"></i>Gratis Antar - Jemput Mobil di Bandara</li>
+                <li class="inline-flex"><i class="bi bi-check mr-4"></i>Layanan Airport Transfer / Drop In Out</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/     Our Services Section -->
+    <!--     Why Us Section -->
+    <section class="why-us-section p-6 lg:pb-100" id="why-us-section">
+      <div class="container max-w-6xl mx-auto">
+        <h2 class="text-center md:text-start text-2xl font-bold mb-4"><span>Why Us?</span></h2>
+        <p class="text-center md:text-start text-sm font-light mb-6">Mengapa harus pilih Binar Car Rental?</p>
+        <div class="md:flex gap-6">
+          <div class="md:w-1/4">
+            <div class="p-6 mb-4 md:mb-0 md:p-4 border-solid border-2 rounded-lg h-48 overflow-auto">
+              <i class="bi bi-hand-thumbs-up bg-alrt-yellow"></i>
+              <p class="text-base font-bold py-4">Mobil Lengkap</p>
+              <p class="text-sm font-light">Tersedia banyak pilihan mobil, kondisi masih baru, bersih, dan terawat.</p>
+            </div>
+          </div>
+          <div class="md:w-1/4">
+            <div class="p-6 mb-4 md:mb-0 md:p-4 border-solid border-2 rounded-lg h-48 overflow-auto">
+              <i class="bi bi-tag bg-alrt-red"></i>
+              <p class="text-base font-bold py-4">Harga Murah</p>
+              <p class="text-sm font-light">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain.</p>
+            </div>
+          </div>
+          <div class="md:w-1/4">
+            <div class="p-6 mb-4 md:mb-0 md:p-4 border-solid border-2 rounded-lg h-48 overflow-auto">
+              <i class="bi bi-clock bg-darkblue-04"></i>
+              <p class="text-base font-bold py-4">Layanan 24 Jam</p>
+              <p class="text-sm font-light">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu.</p>
+            </div>
+          </div>
+          <div class="md:w-1/4">
+            <div class="p-6 mb-4 md:mb-0 md:p-4 border-solid border-2 rounded-lg h-48 overflow-auto">
+              <i class="bi bi-award bg-limegreen-04"></i>
+              <p class="text-base font-bold py-4">Sopir Profesional</p>
+              <p class="text-sm font-light">Sopi yang profesional, berpengalaman, jujur, ramah, dan tepat waktu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/     Why Us Section -->
+
+    <!--     Testimonial Section -->
+    <section class="testimonial-section p-6 lg:p-0 lg:pb-100" id="testimonial-section">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h3 class="text-2xl font-bold mb-4">Testimonial</h3>
+          <p class="text-sm font-light mb-6">Berbagai ulasan positif dari pelanggan kami.</p>
+        </div>
+      </div>
+      <div class="my-slider">
+        <div class="slide-wrapper">
+          <div class="slide lg:flex rounded-lg">
+            <div class="lg:w-1/4 m-auto flex lg:flex-none items-center justify-center me-3">
+              <img src="./images/woman-1.jpeg" alt="" class="profile-picture">
+            </div>
+            <div class="lg:w-3/4 text-sm">
+              <div class="mb-6 text-center lg:text-start">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4 font-light">"Binar Car Rental adalah pilihan utama saya untuk sewa mobil. Layanan pelanggan mereka luar biasa dan mobil-mobilnya selalu dalam kondisi prima. Sangat direkomendasikan!"</p>
+              <p class="font-semibold">Maria S. 35, Jakarta</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide-wrapper">
+          <div class="slide lg:flex rounded-lg">
+            <div class="lg:w-1/4 m-auto flex lg:flex-none items-center justify-center me-3">
+              <img src="./images/man-1.jpeg" alt="" class="profile-picture">
+            </div>
+            <div class="lg:w-3/4 text-sm">
+              <div class="mb-6 text-center lg:text-start">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4 font-light">"Saya cukup puas dengan pengalaman menyewa mobil di Binar Car Rental. Prosesnya cepat dan mudah, dan mobil yang saya sewa sangat nyaman untuk perjalanan jarak jauh."</p>
+              <p class="font-semibold">Ahmad R. 41, Surabaya</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide-wrapper">
+          <div class="slide lg:flex rounded-lg">
+            <div class="lg:w-1/4 m-auto flex lg:flex-none items-center justify-center me-3">
+              <img src="./images/woman-2.jpeg" alt="" class="profile-picture">
+            </div>
+            <div class="lg:w-3/4 text-sm">
+              <div class="mb-6 text-center lg:text-start">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4 font-light">"Binar Car Rental memberikan layanan yang sangat profesional. Mobil yang saya sewa bersih dan terawat dengan baik. Harganya juga cukup terjangkau. Pasti akan kembali lagi."</p>
+              <p class="font-semibold">Rani W. 25, Bandung</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide-wrapper">
+          <div class="slide lg:flex rounded-lg">
+            <div class="lg:w-1/4 m-auto flex lg:flex-none items-center justify-center me-3">
+              <img src="./images/man-2.jpeg" alt="" class="profile-picture">
+            </div>
+            <div class="lg:w-3/4 text-sm">
+              <div class="mb-6 text-center lg:text-start">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4 font-light">"Meskipun pelayanannya cukup baik, saya merasa harga sewa mobil di Binar Car Rental sedikit lebih tinggi dibandingkan dengan tempat lain di sekitar. Tetapi secara keseluruhan, pengalaman saya tetap memuaskan."</p>
+              <p class="font-semibold">Fajar A. 32, Jakarta</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide-wrapper">
+          <div class="slide lg:flex rounded-lg">
+            <div class="lg:w-1/4 m-auto flex lg:flex-none items-center justify-center me-3">
+              <img src="./images/woman-3.jpeg" alt="" class="profile-picture">
+            </div>
+            <div class="lg:w-3/4 text-sm">
+              <div class="mb-6 text-center lg:text-start">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4 font-light">"Binar Car Rental adalah tempat terbaik untuk menyewa mobil di kota ini. Stafnya ramah dan membantu, mobilnya modern dan bersih, dan prosesnya sangat efisien. Sangat direkomendasikan untuk siapa pun yang membutuhkan mobil sewaan."</p>
+              <p class="font-semibold">Rina M. 29, Medan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-6" id="custom-control">
+        <button><i class="bi bi-chevron-left"></i></button>
+        <button><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </section>
+    <!--/     Testimonial Section -->
+
+    <!--     Sewa Mobil Section -->
+    <section class="p-6 lg:pb-100" id="sewa-mobil-section">
+      <div class="container max-w-6xl mx-auto bg-darkblue-04 text-white h-[400px] mobile:h-[326px] rounded-[13px] flex items-center justify-center">
+        <div class="text-center">
+          <h1 class="mb-6 font-bold text-2xl w-3/5 mobile:w-full mobile:text-4xl mx-auto">Sewa Mobil di (Lokasimu) Sekarang</h1>
+          <p class="mb-12 font-light text-sm w-3/5 mx-auto">Sewa Mobil di (Lokasimu) Sekarang dan jelajahi destinasi impianmu tanpa khawatir transportasi!</p>
+          <a href="/cars" class="btn-green">Mulai Sewa Mobil</a>
+        </div>
+      </div>
+    </section>
+    <!--/     Sewa Mobil Section -->
+
+    <!--     FAQ Section -->
+    <section class="faq-section p-6 lg:pb-100" id="faq-section">
+      <div class="container max-w-6xl mx-auto">
+        <div class="lg:flex lg:justify-between">
+          <div class="lg:w-1/3 mb-6 lg:mb-0 text-center lg:text-start">
+            <h2 class="font-bold text-2xl mb-4">Frequently Asked Question</h2>
+            <p class="font-light text-sm">Frequently Asked Questions (Pertanyaan yang Sering Diajukan) ini berisi jawaban atas beragam pertanyaan umum yang mungkin Anda miliki.</p>
+          </div>
+          <div class="lg:w-2/3 lg:w-[668px]">
+            <div class="accordion">
+              <!--             faq1 -->
+              <div class="accordion-item mb-4 border rounded">
+                <button class="accordion-header px-4 py-3 flex justify-between w-full" onclick="toggleAccordion(this)">
+                  <h2 class="text-light text-sm text-start">Apa saja syarat yang dibutuhkan?</h2>
+                  <i class="bi bi-chevron-down ml-3"></i>
+                </button>
+                <div class="accordion-body hidden px-6 py-3 text-light text-sm bg-[#F1F3FF]">
+                  Untuk menyewa mobil dari Binar Rental Mobil, Anda perlu memiliki SIM yang masih berlaku dan kartu identitas (KTP atau paspor) yang sah. Selain itu, kami juga memerlukan jaminan berupa kartu kredit atau deposit tunai.
+                </div>
+              </div>
+              <!--             faq2 -->
+              <div class="accordion-item mb-4 border rounded">
+                <button class="accordion-header px-4 py-3 flex justify-between w-full" onclick="toggleAccordion(this)">
+                  <h2 class="text-light text-sm text-start">Berapa hari minimal sewa mobil lepas kunci?</h2>
+                  <i class="bi bi-chevron-down ml-3"></i>
+                </button>
+                <div class="accordion-body hidden px-6 py-3 text-light text-sm bg-[#F1F3FF]">
+                  Minimal sewa mobil lepas kunci adalah 1 hari.
+                </div>
+              </div>
+              <!--             faq3 -->
+              <div class="accordion-item mb-4 border rounded">
+                <button class="accordion-header px-4 py-3 flex justify-between w-full" onclick="toggleAccordion(this)">
+                  <h2 class="text-light text-sm text-start">Berapa hari sebelumnya sebaiknya booking sewa mobil?</h2>
+                  <i class="bi bi-chevron-down ml-3"></i>
+                </button>
+                <div class="accordion-body hidden px-6 py-3 text-light text-sm bg-[#F1F3FF]">
+                  Sebaiknya Anda melakukan booking sewa mobil minimal 3 hari sebelum tanggal pengambilan mobil untuk memastikan ketersediaan kendaraan.
+                </div>
+              </div>
+              <!--             faq4 -->
+              <div class="accordion-item mb-4 border rounded">
+                <button class="accordion-header px-4 py-3 flex justify-between w-full" onclick="toggleAccordion(this)">
+                  <h2 class="text-light text-sm text-start">Apakah ada biaya antar-jemput?</h2>
+                  <i class="bi bi-chevron-down ml-3"></i>
+                </button>
+                <div class="accordion-body hidden px-6 py-3 text-light text-sm bg-[#F1F3FF]">
+                  Ya, kami menyediakan layanan antar-jemput dengan biaya tambahan. Biaya ini tergantung pada lokasi penjemputan dan tujuan akhir Anda.
+                </div>
+              </div>
+              <!--             faq5 -->
+              <div class="accordion-item border rounded">
+                <button class="accordion-header px-4 py-3 flex justify-between w-full" onclick="toggleAccordion(this)">
+                  <h2 class="text-light text-sm text-start">Bagaimana jika terjadi kecelakaan?</h2>
+                  <i class="bi bi-chevron-down ml-3"></i>
+                </button>
+                <div class="accordion-body hidden px-6 py-3 text-light text-sm bg-[#F1F3FF]">
+                  Jika terjadi kecelakaan, segera hubungi layanan darurat dan laporkan insiden tersebut kepada kami. Kami akan memberikan panduan langkah-langkah selanjutnya sesuai dengan kebijakan asuransi dan prosedur kami.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--/     FAQ Section -->
+
+  </main>
+
+  <!--     Footer Bar-->
+  <footer class="footer p-6">
+    <div class="container max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-6 lg:gap-20">
+        <div class="footer-info lg:w-[268px] lg:h-[112px]">
+          <p class="mb-2">Jalan Suroyo No. 161 Mayangan Kota Probolonggo</p>
+          <p class="mb-2">binarcarrental@gmail.com</p>
+          <p>081-233-334-808</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <a class="font-normal text-sm" href="#our-services-section">Our Services</a>
+          <a class="font-normal text-sm" href="#why-us-section">Why Us</a>
+          <a class="font-normal text-sm" href="#testimonial-section">Testimonial</a>
+          <a class="font-normal text-sm" href="#faq-section">FAQ</a>
+        </div>
+        <div class="w-[268px] h-[68px]">
+          <p class="mb-2">Connect with us</p>
+          <div class="flex gap-4">
+            <a class="" href="#"><i class="bi bi-facebook"></i></a>
+            <a class="" href="#"><i class="bi bi-instagram"></i></a>
+            <a class="" href="#"><i class="bi bi-twitter"></i></a>
+            <a class="" href="#"><i class="bi bi-envelope"></i></a>
+            <a class="" href="#"><i class="bi bi-twitch"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-legal">
+            <p class="text-sm font-light mb-4">Copyright Binar 2024</p>
+            <a class="text-darkblue-04 bg-darkblue-04 p-2" href="#">Binar Rental Car</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/     Footer Bar-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./scripts/slider.js" type="module"></script>
+  <script src="./scripts/accordion.js" type="text/javascript"></script>
+
+</body>
+</html>

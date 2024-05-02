@@ -1,0 +1,19 @@
+{
+  "name": "binar-fsw-challenge-04",
+  "version": "1.0.0",
+  "description": "Project HTTP Server dan DOM",
+  "main": "server/index.js",
+  "author": "Fikri Rahmat Nurhidayat <fnurhidayat@binar.co.id>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "dev": "npx tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
