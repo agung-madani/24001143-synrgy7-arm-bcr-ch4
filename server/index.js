@@ -33,9 +33,6 @@ function onRequest(req, res) {
     if (req.url === '/cars') {
         filePath = path.join(PUBLIC_DIRECTORY, 'cars.html');
     };
-    // if (req.irl === '/our-services-section') {
-    //     filePath = path.join(PUBLIC_DIRECTORY, req.url);
-    // };
 
     fs.readFile(filePath, (err, content) => {
         if (err) {

@@ -66,14 +66,14 @@
     </div>
   </section>
   <!--/   Hero Section -->
-  <main class="relative mb-20">
+  <main class="relative mb-96 lg:mb-20">
     <!-- Absolute positioned search bar -->
-    <div class="absolute top-0 left-0 right-0 w-[1047px] mx-auto mt-[-50px]">
-      <div class="flex items-center justify-between bg-white rounded-lg shadow-md p-6 shadow-md">
-        <div class="">
+    <div class="absolute top-0 left-0 right-0 mx-auto mt-[-50px] lg:w-[1047px] px-6 lg:px-0">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-white rounded-lg shadow-md p-6">
+        <div class="mb-4 lg:mb-0">
           <p class="font-light text-xs mb-2">Tipe Driver</p>
           <!-- Tipe Driver Dropdown -->
-          <select id="driver-type" class="mr-2 w-[210.75px] h-9 border border-gray-300 rounded px-4 py-2" onchange="checkFields()">
+          <select id="driver-type" class="mr-2 w-full lg:w-[210.75px] h-9 rounded px-4 py-2" onchange="checkFields()">
             <option value="" disabled selected hidden>Pilih Tipe Driver</option>
             <option value="driver-true">Dengan Sopir</option>
             <option value="driver-false">Tanpa Sopir (Lepas Kunci)</option>
@@ -81,16 +81,16 @@
         </div>
         
         <!-- Date Input -->
-        <div class="">
+        <div class="mb-4 lg:mb-0">
           <p class="font-light text-xs mb-2">Tanggal</p>
           <!-- Hari -->
-          <input id="date-input" type="date" class="mr-2 w-[210.75px] h-9 border border-gray-300 rounded px-4 py-2" onchange="checkFields()">
+          <input id="date-input" type="date" class="mr-2 w-full lg:w-[210.75px] h-9 rounded px-4 py-2" onchange="checkFields()">
         </div>
         
-        <div class="">
+        <div class="mb-4 lg:mb-0">
           <p class="font-light text-xs mb-2">Waktu Jemput/Ambil</p>
           <!-- Waktu Jemput Dropdown -->
-          <select id="pickup-time" class="mr-2 w-[210.75px] h-9 border border-gray-300 rounded px-4 py-2" onchange="checkFields()">
+          <select id="pickup-time" class="mr-2 w-full lg:w-[210.75px] h-9 rounded px-4 py-2" onchange="checkFields()">
             <option value="" disabled selected hidden>Pilih Waktu</option>
             <option value="08:00">08:00 WIB</option>
             <option value="09:00">09:00 WIB</option>
@@ -100,16 +100,16 @@
           </select>
         </div>
         
-        <div class="">
+        <div class="mb-4 lg:mb-0">
           <p class="font-light text-xs mb-2">Jumlah Penumpang</p>
           <!-- Jumlah Penumpang Input -->
           <div class="relative">
-            <input id="passenger-count" type="text" placeholder="Jumlah Penumpang" class="mr-2 w-[210.75px] h-9 border border-gray-300 rounded px-4 py-2" onchange="checkFields()">
+            <input id="passenger-count" type="text" placeholder="Jumlah Penumpang" class="mr-2 w-full lg:w-[210.75px] h-9 rounded px-4 py-2" onchange="checkFields()">
             <div class="absolute top-1/2 right-4 transform -translate-y-1/2 w-5 h-5 bg-cover" style="background-image: url(https://i.ibb.co/wNxCLNp/icon-input-penumpang.png)"></div>
           </div>
         </div>
         
-        <div class="">
+        <div>
           <p class="font-light text-xs mb-6"></p>
           <!-- Search Button -->
           <button id="load-btn" class="bg-green-500 h-9 hover:bg-green-600 text-white rounded px-4 py-2 cursor-not-allowed" disabled>Cari Mobil</button>
@@ -117,8 +117,9 @@
       </div>
     </div>
   </main>
+
   <div class="flex items-center justify-center">
-    <div class="hidden grid grid-cols-3 gap-4" id="cars-container"></div>
+    <div class="hidden grid grid-cols-1 lg:grid-cols-3 gap-4" id="cars-container"></div>
   </div>
   
   <!--     Footer Bar-->
@@ -162,7 +163,6 @@
   <script type="text/javascript" src="./scripts/binar.js"></script>
   <script type="text/javascript" src="./scripts/app.js"></script>
   <script type="text/javascript" src="./scripts/car.js"></script>
-  <script type="text/javascript" src="./scripts/search.js"></script>
 
 </body>
 </html>
