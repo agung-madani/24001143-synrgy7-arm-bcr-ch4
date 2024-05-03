@@ -1451,6 +1451,10 @@ video {
     width: 1047px;
   }
 
+  .lg\:w-\[333px\] {
+    width: 333px;
+  }
+
   .lg\:flex-none {
     flex: none;
   }

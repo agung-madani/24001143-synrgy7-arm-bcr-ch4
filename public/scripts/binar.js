@@ -11,10 +11,13 @@ class Binar {
       const timeAt = new Date();
       const mutator = getRandomInt(1000000, 100000000);
       const availableAt = new Date(timeAt.getTime() + (isPositive ? mutator : -1 * mutator))
+      
+      const typeDriver = Math.random() < 0.5 ? "driver-true" : "driver-false";
 
       return {
         ...car,
         availableAt,
+        typeDriver
       };
     })
   }
@@ -25,7 +28,7 @@ class Binar {
 
       return {
         ...car,
-        availableAt,
+        availableAt
       };
     })
   }
@@ -37,6 +40,8 @@ class Binar {
     if (!!cachedCarsString) {
       const cacheCars = JSON.parse(cachedCarsString);
       cars = this.populateCars(cacheCars);
+      console.log(cars);
+      
     } else {
       const response = await fetch(
         "../data/cars.min.json"
@@ -44,7 +49,6 @@ class Binar {
       console.log("there is no a chached")
       const body = await response.json();
       cars = this.populateNewCars(body)
-
       localStorage.setItem("CARS", JSON.stringify(cars));
     }
 

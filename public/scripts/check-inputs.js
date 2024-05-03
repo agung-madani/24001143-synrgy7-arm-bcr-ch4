@@ -5,7 +5,6 @@ function checkFields() {
   
   this.loadButton = document.getElementById("load-btn");
   
-  // If any of the mandatory fields are empty, disable the button
   if (driverType === "" || date === "" || pickupTime === "") {
     document.getElementById("load-btn").disabled = true;
     this.loadButton.classList.add('cursor-not-allowed');
