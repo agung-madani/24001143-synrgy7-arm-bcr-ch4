@@ -40,7 +40,6 @@ class Binar {
     if (!!cachedCarsString) {
       const cacheCars = JSON.parse(cachedCarsString);
       cars = this.populateCars(cacheCars);
-      console.log(cars);
       
     } else {
       const response = await fetch(
@@ -53,7 +52,7 @@ class Binar {
     }
 
     if (filterer instanceof Function) return cars.filter(filterer);
-
+    
     return cars;
   }
 }

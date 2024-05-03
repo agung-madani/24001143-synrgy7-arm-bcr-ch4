@@ -38,7 +38,6 @@ class App {
       car.capacity >= passengerCount &&
       car.typeDriver === driverType
     );
-    console.log(cars)
     Car.init(cars);
   }
 }
