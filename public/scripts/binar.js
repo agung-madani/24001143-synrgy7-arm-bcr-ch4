@@ -17,7 +17,7 @@ class Binar {
       return {
         ...car,
         availableAt,
-        typeDriver
+        typeDriver,
       };
     })
   }
@@ -40,17 +40,18 @@ class Binar {
     if (!!cachedCarsString) {
       const cacheCars = JSON.parse(cachedCarsString);
       cars = this.populateCars(cacheCars);
+      console.log("there is a cache")
       
     } else {
       const response = await fetch(
-        "../data/cars.min.json"
+        "https://raw.githubusercontent.com/fnurhidayat/probable-garbanzo/main/data/cars.min.json"
       );
-      console.log("there is no a chached")
+      console.log("there is no a cache")
       const body = await response.json();
       cars = this.populateNewCars(body)
       localStorage.setItem("CARS", JSON.stringify(cars));
     }
-
+    
     if (filterer instanceof Function) return cars.filter(filterer);
     
     return cars;
